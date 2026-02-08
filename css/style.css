@@ -19,6 +19,26 @@
   --color-brown-800: #854632;
   --color-rose-50: #fff5fa;
   --color-rose-800: #7b284f;
+
+  /* Size  */
+  --size-margin-gap: 2rem 0;
+  --size-border-radius: 16px;
+}
+
+/* Common */
+.section {
+  margin: var(--size-margin-gap);
+}
+
+.title {
+  margin: var(--size-margin-gap);
+  font-size: 1.8rem;
+  color: var(--color-brown-800);
+}
+
+.mark {
+  color: var(--color-stone-600);
+  font-weight: 700;
 }
 
 * {
@@ -27,15 +47,138 @@
 
 body {
   font-family: outfit, sans-serif;
+  background-color: var(--color-stone-100);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
 }
 
 h1,
-h2,
-h3 {
+h2 {
   font-family: 'young serif', serif;
 }
 
 a {
   text-decoration: none;
   color: var(--color-stone-600);
+}
+
+p {
+  word-break: keep-all;
+}
+
+.recipe {
+  width: 800px;
+  margin-top: 120px;
+  padding: 40px;
+  border-radius: var(--size-border-radius);
+  background-color: var(--color-white);
+}
+
+.recipe__image {
+  width: 100%;
+  border-radius: var(--size-border-radius);
+  object-fit: cover;
+}
+
+.recipe__title {
+  margin: var(--size-margin-gap);
+  font-size: 2.5rem;
+}
+
+.recipe__description {
+  line-height: 1.5;
+}
+
+.time {
+  background-color: var(--color-rose-50);
+  margin: var(--size-margin-gap);
+  padding: 1.4rem;
+  border-radius: 8px;
+}
+
+.time__title {
+  margin-bottom: 1.4rem;
+  color: var(--color-rose-800);
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.time__lists {
+  list-style: disc;
+  padding-left: 0.8rem;
+}
+
+.time__list {
+  padding-left: 1.5rem;
+}
+
+.time__list::marker {
+  content: '\2022';
+}
+
+.section:not(:last-child) {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--color-stone-150);
+}
+
+.ingredients {
+  padding-left: 1.4rem;
+  list-style: disc;
+}
+
+.ingredient {
+  padding-left: 1.3rem;
+}
+
+.instructions {
+  padding-left: 1rem;
+}
+
+.instruction {
+  padding-left: 1.3rem;
+  line-height: 1.8;
+}
+
+.instruction::marker {
+  font-weight: bold;
+}
+
+.time__list::marker,
+.ingredient::marker,
+.instruction::marker {
+  color: var(--color-rose-800);
+}
+
+.time__list:not(:last-child),
+.ingredient:not(:last-child),
+.instruction:not(:last-child) {
+  margin-bottom: 1.1rem;
+}
+
+table {
+  margin: 1.5rem 0;
+  width: 100%;
+}
+
+tr:not(:last-child) {
+  border-bottom: 1px solid var(--color-stone-150);
+}
+
+td {
+  padding: 1rem;
+}
+
+td:first-child {
+  padding-left: 1.8rem;
+}
+
+td:last-child {
+  color: var(--color-brown-800);
+  font-weight: 700;
+}
+
+footer {
+  margin: var(--size-margin-gap);
 }
