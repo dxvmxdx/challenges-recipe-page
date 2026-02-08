@@ -1,1 +1,41 @@
 @import url('./reset.css');
+@font-face {
+  font-family: 'young serif';
+  src: url(../assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+@font-face {
+  font-family: 'outfit';
+  src: url(../assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+/* Global */
+:root {
+  /* Colors */
+  --color-white: #ffffff;
+  --color-stone-100: #f3e6d8;
+  --color-stone-150: #e4ded8;
+  --color-stone-600: #5f574e;
+  --color-stone-900: #302d2c;
+  --color-brown-800: #854632;
+  --color-rose-50: #fff5fa;
+  --color-rose-800: #7b284f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: outfit, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'young serif', serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-stone-600);
+}
