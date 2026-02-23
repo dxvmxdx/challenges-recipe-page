@@ -106,16 +106,12 @@ p {
 }
 
 .time__lists {
-  list-style: disc;
+  list-style: '\2022';
   padding-left: 0.8rem;
 }
 
 .time__list {
   padding-left: 1.5rem;
-}
-
-.time__list::marker {
-  content: '\2022';
 }
 
 .section:not(:last-child) {
@@ -125,7 +121,6 @@ p {
 
 .ingredients {
   padding-left: 1.4rem;
-  list-style: disc;
 }
 
 .ingredient {
